@@ -4,17 +4,18 @@
 Author: Joshua Lawrinenko
 Date: 5/2/2020
 File: reset.css
+Description: Resets the browser and gives clean slate for style sheets
 */
 
 article, aside, figcaption, figure,
-footer, header, main, nav, section { /* removes browser defaults and gives clean slate */
+footer, header, main, nav, section {
 	display: block;
 }
 
 address, article, aside, blockquote, body, cite,
 div, dl, dt, dd, em, figcaption, figure, footer,
 h1, h2, h3, h4, h5, h6, header, html, img,
-li, main, nav, ol, p, section, span, ul { /* removes browser defaults and gives clean slate */
+li, main, nav, ol, p, section, span, ul {
 	background: transparent;
 	font-size: 100%;
 	margin: 0;
@@ -25,15 +26,15 @@ li, main, nav, ol, p, section, span, ul { /* removes browser defaults and gives 
 	box-sizing: border-box;
 }
 
-body { /* removes browser defaults and gives clean slate */
+body {
 	line-height: 1; 
 }
 
-nav ul { /* removes browser defaults and gives clean slate */
+nav ul {
 	list-style: none;
 	list-style-image: none;
 }
 
-nav a { /* removes browser defaults and gives clean slate */
+nav a {
 	text-decoration: none;
 }

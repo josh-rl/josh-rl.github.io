@@ -5,3 +5,61 @@ Author: Joshua Lawrinenko
 Date: 5/2/2020
 File: style.css
 */
+
+.my-background-image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.my-container {
+    border-radius: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    max-width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.my-container-header {
+    position: relative;
+}
+
+.my-container-header img{
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.my-nav {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.my-nav li {
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.my-nav a {
+    padding: 2.5px 20px;
+    border-radius: 25px;
+    min-width: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.my-nav a:hover {
+    background-color: darkgrey;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.current-a {
+    background-color: dimgrey;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+
