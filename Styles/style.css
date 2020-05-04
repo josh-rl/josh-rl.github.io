@@ -6,6 +6,10 @@ Date: 5/2/2020
 File: style.css
 */
 
+body {
+    background-color: lightblue;
+}
+
 .my-background-image img {
     position: absolute;
     top: 0;
@@ -45,21 +49,23 @@ File: style.css
 }
 
 .my-nav a {
-    padding: 2.5px 20px;
+    padding: 4px 20px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: white;
     border-radius: 25px;
-    min-width: 100px;
-    color: white;
+    color: black;
     text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #c0c0c0;
 }
 
 .my-nav a:hover {
     background-color: darkgrey;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
-.current-a {
+.my-nav a:active {
     background-color: dimgrey;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 
