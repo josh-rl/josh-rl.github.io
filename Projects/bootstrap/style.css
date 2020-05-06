@@ -1,0 +1,146 @@
+body {
+	background-color: #C0C0C0;
+}
+
+.container{
+	background-color: lightgrey;
+	padding-top: 30px;
+	padding-bottom: 70px;
+	padding-left: 40px;
+	padding-right: 40px;
+	min-height: 500px;
+}
+
+header {
+	max-width: 100%;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	text-align: center;
+	background-image: url("images/background.png");
+	font-family: 'Pacifico', cursive;
+}
+
+ul {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.about-us {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.carousel, .card, .container {
+	box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	margin-top: 30px;
+}
+
+.ameneties {
+	margin-top: 30px;
+	display: grid;
+	grid-template-areas:
+		'head head'
+		'left-list right-list';
+}
+
+.ameneties h3 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.head-top {
+	grid-area: head;
+}
+
+.list-left {
+	grid-area: left-list;
+}
+
+.list-right {
+	grid-area: right-list;
+}
+
+.about-rooms {
+	margin-top: 30px;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	color: #fff;
+	width: 100%;
+}
+
+footer a {
+	color: rgba(255,255,255,.5);
+}
+
+.container-contact {
+	display: grid;
+	grid-template-areas:
+		'title title'
+		'info map'
+		'form map';
+}
+
+.contact-head {
+	text-align: center;
+	margin-bottom: 20px;
+	grid-area: title;
+}
+
+.contact-info {
+	text-align: center;
+	margin-right: 20px;
+	grid-area: info;
+}
+
+.contact-form {
+	margin-right: 20px;
+	grid-area: form;
+}
+
+.google-map {
+	grid-area: map;
+}
+
+@media screen and (max-width: 1000px) {
+	.cards {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.card {
+		margin-top: 30px;
+	}
+
+	.ameneties {
+		display: block;
+		text-align: center;
+	}
+
+	.container-contact {
+		grid-template-areas:
+			'title'
+			'map'
+			'info'
+			'form'
+	}
+
+	.google-map {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+}

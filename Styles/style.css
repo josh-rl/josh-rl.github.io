@@ -65,10 +65,11 @@ body {
 
 .my-container-body {
     display: grid;
-    grid-gap: 20px;
+    gap: 20px;
     grid-template-columns: 1fr 2fr;
     padding: 30px;
-    background-color: white;
+    margin-bottom: 100px;
+    background-color: whitesmoke;
     border-radius: 0 0 1rem 1rem;
 }
 
@@ -78,8 +79,9 @@ body {
         'picture'
         'name'
         'info';
-    
     text-align: center;
+    border-right: 2px solid #c0c0c0;
+    padding-right: 20px;
 }
 
 .my-bio-card img {
@@ -99,4 +101,52 @@ body {
 
 .my-bio-card p {
     grid-area: 'info';
+}
+
+.my-page-contents {
+    display: grid;
+}
+
+.my-container-projects {
+    padding: 30px;
+    margin-bottom: 100px;
+    background-color: whitesmoke;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.my-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'label1 label2 label3'
+        'list1 list2 list3';
+    gap: 20px;
+}
+
+.my-projects h3 {
+    text-align: center;
+}
+
+.web-label {
+    grid-area: 'label1';
+}
+
+.python-label {
+    grid-area: 'label2';
+}
+
+.c-label {
+    grid-area: 'label3';
+}
+
+.web-list {
+    grid-area: 'list1';
+}
+
+.p-list {
+    grid-area: 'list2';
+}
+
+.c-list {
+    grid-area: 'list3';
 }

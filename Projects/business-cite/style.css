@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/*
+Author: Joshua Lawrinenko
+Class: CIS-130-H101
+Assignment: About a Product
+Date: 2-15-2020
+File: style.css
+*/
+
+/* RESET */
+body, header, nav, footer,
+h1, h2, p, ol, ol li, ol ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* PAGE FORMATTING */
+html {
+  background-color: rgb(173, 216, 230);
+}
+
+body {
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+/* HEADER */
+header {
+  background-color: #F1F1F1;
+}
+
+/* NAVIGATION BAR */
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #F1F1F1;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: #000000;
+}
+
+nav a:hover {
+  color: #0000FF;
+  text-decoration: underline;
+  background-color: white;
+}
+
+nav a:active {
+  color: #AA00FF;
+  text-decoration: underline;
+}
+
+nav a.current {
+  background-color: white;
+}
+
+/* SECTION */
+/* Container */
+section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/* Image containers and formatting */
+img.border {
+  margin-left: auto;
+  margin-right: auto;
+  outline-width: thick;
+  outline-style: inset;
+  outline-color: gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+div.logo-container {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+img.logos {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* List formatting */
+ol, ol li, ol ul, ol ul li {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  margin-top: 10px;
+  text-align: left;
+  list-style-position: inside;
+}
+
+ol ul li {
+  text-indent: 20px;
+}
+
+/* Paragraph formatting */
+p.products {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+}
+
+p.description {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  max-width: 650px;
+}
+
+p.slogan {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #F1F1F1;
+  text-align: center;
+}
+
+address {
+  font-size: 0.9em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
