@@ -10,13 +10,13 @@ body {
     background-color: lightblue;
 }
 
-.my-background-image img {
+/* .my-background-image img {
     position: absolute;
     top: 0;
     width: 100%;
     z-index: -1;
     opacity: 0.1;
-}
+} */
 
 .my-container {
     border-radius: 1rem;
@@ -27,19 +27,14 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.my-container-header {
-    position: relative;
-}
-
 .my-container-header img{
     max-width: 100%;
     border-radius: 1rem 1rem 0 0;
 }
 
 .my-nav {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
+    text-align: center;
+    margin-top: -40px;
 }
 
 .my-nav li {
@@ -68,4 +63,40 @@ body {
     background-color: dimgrey;
 }
 
+.my-container-body {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px;
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+}
 
+.my-bio-card {
+    display: grid;
+    grid-template-areas:
+        'picture'
+        'name'
+        'info';
+    
+    text-align: center;
+}
+
+.my-bio-card img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    grid-area: 'picture';
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.my-bio-card h1 {
+    grid-area: 'name'
+}
+
+.my-bio-card p {
+    grid-area: 'info';
+}
