@@ -100,11 +100,15 @@ body {
     grid-area: info;
 }
 
+.my-bio-card span {
+    font-size: 2rem;
+}
+
 .my-page-contents {
     display: grid;
 }
 
-.my-bio-card h3 a {
+.my-bio-card span a {
     color: black;
 }
 
