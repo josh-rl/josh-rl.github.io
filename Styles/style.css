@@ -6,6 +6,7 @@ Date: 5/2/2020
 File: style.css
 */
 
+/* BODY AND CONTAINER */
 body {
     background-color: grey;
 }
@@ -25,6 +26,7 @@ body {
     border-radius: 1rem 1rem 0 0;
 }
 
+/* NAVIGATION */
 .my-nav {
     text-align: center;
     margin-top: -10px;
@@ -56,6 +58,8 @@ body {
     background-color: grey;
 }
 
+/* BODY CONTAINERS */
+/* HOME PAGE */
 .my-container-body {
     display: grid;
     gap: 20px;
@@ -104,6 +108,7 @@ body {
     color: black;
 }
 
+/* PROJECTS AND CONTACT PAGE */
 .my-container-projects, .my-container-contact {
     padding: 30px;
     margin-bottom: 100px;
@@ -127,6 +132,7 @@ body {
     margin-right: auto;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 900px) {
     .my-container-body {
         grid-template-columns: 1fr;
