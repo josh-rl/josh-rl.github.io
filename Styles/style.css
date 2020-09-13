@@ -121,8 +121,13 @@ body {
 }
 
 .my-projects {
+    /*
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    */
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 60%;
     gap: 20px;
 }
 
@@ -152,11 +157,11 @@ body {
         grid-template-columns: none;
         grid-template-areas:
             'first'
-            'second'
-            'third'
+            'second';
+            /*'third'
             'fourth'
             'fifth'
-            'sixth';
+            'sixth'*/
     }
     
     .web-label {
@@ -167,6 +172,7 @@ body {
         grid-area: second;
     }
     
+    /*
     .python-label {
         grid-area: third;
     }
@@ -182,6 +188,7 @@ body {
     .c-list {
         grid-area: sixth;
     }
+    */
 
     .my-container-contact {
         width: 80%;
